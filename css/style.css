@@ -1,0 +1,59 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #cdcdcd;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.menu li {
+    padding: 0 15px;
+    /* Da altezza alla li e in questo caso una soluzione con flex sarebbe stata più complicata */
+    line-height: 70px;
+}
+.menu a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    vertical-align: middle;
+}
+
+.current {
+    border-bottom: 2px solid green;
+}
+
+.logo img {
+    width: 120px;
+    /* Vertical align middle per allineare l'immagine agli altri elementi inline o inline-block */
+    vertical-align: middle;
+}
+
+/* MAIN */
+main {
+    margin-top: 100px;
+}
